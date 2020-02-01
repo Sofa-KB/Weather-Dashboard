@@ -18,8 +18,6 @@ function weatherSearch() {
         url: weatherUrl,
         method: "GET"
     }).then(function (response) {
-        console.log(response)
-
         var lat = response.city.coord.lat
         var long = response.city.coord.lon
         var temp1 = (response.list[0].main.temp - 273) * 1.8 + 32
@@ -70,14 +68,11 @@ function weatherSearch() {
             url: uvUrl,
             method: "GET"
         }).then(function (response) {
-            console.log(response[0].value)
-
             var uvIndex1 = response[0].value
             var uvIndex2 = response[1].value
             var uvIndex3 = response[2].value
             var uvIndex4 = response[3].value
             var uvIndex5 = response[4].value
-
             $('#uv1').text('UV Index: ' + uvIndex1)
             $('#uv2').text('UV Index: ' + uvIndex2)
             $('#uv3').text('UV Index: ' + uvIndex3)
