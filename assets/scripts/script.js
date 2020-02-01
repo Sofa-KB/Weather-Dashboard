@@ -64,7 +64,7 @@ function weatherSearch() {
         $('#humidity5').text('Humidity: ' + humidity5 + ' %')
         $('#weatherDate5').text(date5)
 
-        var uvUrl = 'http://api.openweathermap.org/data/2.5/uvi/forecast?appid=' + APIKey + '&lat=' + lat + '&lon=' + long + '&cnt=4'
+        var uvUrl = 'https://api.openweathermap.org/data/2.5/uvi/forecast?appid=' + APIKey + '&lat=' + lat + '&lon=' + long + '&cnt=4'
 
         $.ajax({
             url: uvUrl,
