@@ -3,6 +3,12 @@ $('#currentDate').text(currentDate)
 
 function weatherSearch() {
     $('#currentDate').removeClass('hide')
+    $('#day1').removeClass('hide')
+    $('#day2').removeClass('hide')
+    $('#day3').removeClass('hide')
+    $('#day4').removeClass('hide')
+    $('#day5').removeClass('hide')
+    $('#day1').removeClass('hide')
     event.preventDefault()
     var searchQuery = $('#search').val()
     var APIKey = 'aa46a7af9f0ebfa98b879e10000350af';
