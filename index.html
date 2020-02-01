@@ -14,7 +14,6 @@
 
 <body>
     <h1 class="header text-center">Weather Dashboard</h1>
-    <h2 id="city" class='text-center'></h2>
     <h3 id="currentDate" class='text-center hide'></h3>
 
     <form>
@@ -24,12 +23,15 @@
 
     <br>
 
-    <div class='row'>
-        <div class='col-3'></div>
-        <div class='col-9 card'>
-            <div id="temp1">Temperature: </div>
-            <div id="humidity1">Humidity: </div>
-            <div id="wind1">Wind Speed: </div>
+    <div class="container">
+        <div class='row'>
+            <div class='col-12 card text-center'>
+                <h2 id="city" class='text-center'></h2>
+                <div id="temp1">Temperature: </div>
+                <div id="humidity1">Humidity: </div>
+                <div id="wind1">Wind Speed: </div>
+                <div id='uv1'>UV Index: </div>
+            </div>
         </div>
     </div>
 
@@ -37,33 +39,37 @@
 
     <div class="row text-center">
 
-    <div class='col-3'>
-        <div id="temp2">Temperature: </div>
-        <div id="humidity2">Humidity: </div>
-        <div id="wind2">Wind Speed: </div>
-        <div id='weatherDate2'></div>
-    </div>
+        <div class='col-3'>
+            <div id="temp2">Temperature: </div>
+            <div id="humidity2">Humidity: </div>
+            <div id="wind2">Wind Speed: </div>
+            <div id='uv2'>UV Index: </div>
+            <div id='weatherDate2'></div>
+        </div>
 
-    <div class='col-3'>
-        <div id="temp3">Temperature: </div>
-        <div id="humidity3">Humidity: </div>
-        <div id="wind3">Wind Speed: </div>
-        <div id='weatherDate3'></div>
-    </div>
+        <div class='col-3'>
+            <div id="temp3">Temperature: </div>
+            <div id="humidity3">Humidity: </div>
+            <div id="wind3">Wind Speed: </div>
+            <div id='uv3'>UV Index: </div>
+            <div id='weatherDate3'></div>
+        </div>
 
-    <div class='col-3'>
-        <div id="temp4">Temperature: </div>
-        <div id="humidity4">Humidity: </div>
-        <div id="wind4">Wind Speed: </div>
-        <div id='weatherDate4'></div>
-    </div>
+        <div class='col-3'>
+            <div id="temp4">Temperature: </div>
+            <div id="humidity4">Humidity: </div>
+            <div id="wind4">Wind Speed: </div>
+            <div id='uv4'>UV Index: </div>
+            <div id='weatherDate4'></div>
+        </div>
 
-    <div class='col-3'>
-        <div id="temp5">Temperature: </div>
-        <div id="humidity5">Humidity: </div>
-        <div id="wind5">Wind Speed: </div>
-        <div id='weatherDate5'></div>
-    </div>
+        <div class='col-3'>
+            <div id="temp5">Temperature: </div>
+            <div id="humidity5">Humidity: </div>
+            <div id="wind5">Wind Speed: </div>
+            <div id='uv5'>UV Index: </div>
+            <div id='weatherDate5'></div>
+        </div>
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
