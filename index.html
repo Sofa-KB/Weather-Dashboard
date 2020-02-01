@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel='stylesheet' type='text/css' href='assets/styles/style.css'>
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <h1 class="header text-center">Weather Dashboard</h1>
+    <h2 id="city" class='text-center'></h2>
+    <h3 id="currentDate" class='text-center hide'></h3>
+
+    <form>
+        <input id="search" type="text" placeholder="Search...">
+        <button id="submit" class="btn btn-primary" onclick='weatherSearch()'>Click to get Weather</button>
+    </form>
+
+    <br>
+
+    <div class='row'>
+        <div class='col-3'></div>
+        <div class='col-9 card'>
+            <div id="temp1">Temperature: </div>
+            <div id="humidity1">Humidity: </div>
+            <div id="wind1">Wind Speed: </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row text-center">
+
+    <div class='col-3'>
+        <div id="temp2">Temperature: </div>
+        <div id="humidity2">Humidity: </div>
+        <div id="wind2">Wind Speed: </div>
+        <div id='weatherDate2'></div>
+    </div>
+
+    <div class='col-3'>
+        <div id="temp3">Temperature: </div>
+        <div id="humidity3">Humidity: </div>
+        <div id="wind3">Wind Speed: </div>
+        <div id='weatherDate3'></div>
+    </div>
+
+    <div class='col-3'>
+        <div id="temp4">Temperature: </div>
+        <div id="humidity4">Humidity: </div>
+        <div id="wind4">Wind Speed: </div>
+        <div id='weatherDate4'></div>
+    </div>
+
+    <div class='col-3'>
+        <div id="temp5">Temperature: </div>
+        <div id="humidity5">Humidity: </div>
+        <div id="wind5">Wind Speed: </div>
+        <div id='weatherDate5'></div>
+    </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='assets/scripts/script.js'></script>
+
+</body>
+
+</html>
